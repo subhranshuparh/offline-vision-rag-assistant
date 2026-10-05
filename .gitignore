@@ -1,0 +1,70 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== Virtual environments =====
+venv/
+env/
+.venv/
+ENV/
+
+# ===== Jupyter / Colab =====
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===== Trained model & checkpoints =====
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+embedding_model.pth
+training_report.json
+
+# ===== Dataset (auto-downloaded, don't commit) =====
+data/
+*.tar.gz
+cifar-100-python/
+cifar-100-python.tar.gz
+
+# ===== FAISS index & metadata (regenerable via build_index.py) =====
+index_store/
+*.faiss
+
+# ===== Hugging Face / model caches =====
+.cache/
+huggingface/
+~/.cache/huggingface/
+
+# ===== Sample / uploaded images (keep repo light) =====
+sample_images/*
+!sample_images/.gitkeep
+
+# ===== Streamlit =====
+.streamlit/
+
+# ===== Logs, temp files =====
+*.log
+*.tmp
+tmp/
+temp/
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== IDE / editor =====
+.vscode/
+.idea/
+*.swp
+
+# ===== Environment / secrets (if you later add any API keys) =====
+.env
+*.env
